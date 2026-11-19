@@ -1,16 +1,16 @@
 # 🏠 House Price Prediction – Flask Web Application
 
-- 📌 Project Overview
+# 📌 Project Overview
 
 This project is a web-based House Price Prediction Application built using Flask and Machine Learning.
 
 It allows users to enter house details and get an estimated house price through a user-friendly web interface.
 
-🎯 Project Objective
+# 🎯 Project Objective
 
 To deploy a trained Machine Learning model as a web application using Flask.
 
-🛠️ Technologies Used
+# 🛠️ Technologies Used
 
 - Python
 - Flask
@@ -21,18 +21,18 @@ To deploy a trained Machine Learning model as a web application using Flask.
 - HTML
 - CSS
 
-🤖 Machine Learning Model
+# 🤖 Machine Learning Model
 
 - Linear Regression
 
-📥 Input Features
+# 📥 Input Features
 
 - Area (sqft)
 - Bedrooms
 - Bathrooms
 - Age of House
 
-✨ Key Features
+# ✨ Key Features
 
 - User-friendly web interface
 - Interactive input form
@@ -40,7 +40,7 @@ To deploy a trained Machine Learning model as a web application using Flask.
 - Flask backend integration
 - Trained ML model integration
 
-📂 Project Structure
+# 📂 Project Structure
 
 - app.py – Flask backend
 - templates/index.html – Web interface
@@ -48,7 +48,7 @@ To deploy a trained Machine Learning model as a web application using Flask.
 - house_price_LR_model.pkl – Saved ML model
 - requirements.txt – Project dependencies
 
-🚀 Run Locally
+# 🚀 Run Locally
 
 1. Clone the repository.
 
@@ -64,6 +64,6 @@ To deploy a trained Machine Learning model as a web application using Flask.
    
    "http://127.0.0.1:5000"
 
-👩‍💻 Project Type
+# 👩‍💻 Project Type
 
 Machine Learning Model Deployment using Flask.
