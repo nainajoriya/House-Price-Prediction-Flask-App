@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>House Price Prediction</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>🏠House Price Prediction</h1>
+
+            <p class="subtitle">
+                Enter house details to predict the estimated price
+            </p>
+
+            <form action="/predict" method="POST">
+
+                <label>Area (sqft)</label>
+                <input
+                    type="number"
+                    name="area"
+                    placeholder="Example: 1300"
+                    required
+                >
+
+                <label>Bedrooms</label>
+                <input
+                    type="number"
+                    name="bedrooms"
+                    placeholder="Example: 3"
+                    min="1"
+                    required
+                >
+
+                <label>Bathrooms</label>
+                <input
+                    type="number"
+                    name="bathrooms"
+                    placeholder="Example: 2"
+                    min="1"
+                    required
+                >
+
+                <label>Age of House</label>
+                <input
+                    type="number"
+                    name="age"
+                    placeholder="Example: 5"
+                    min="0"
+                    required
+                >
+
+                <button type="submit">
+                    Predict Price
+                </button>
+
+            </form>
+
+            {% if prediction is defined and prediction is not none %}
+
+            <div class="result">
+
+                <h2>Predicted House Price</h2>
+
+                <p>
+                 
+                    ₹ {{ "{:,.2f}".format(prediction) }}
+                     
+                </p>
+
+            </div>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</body>
+</html>
