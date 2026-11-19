@@ -1,6 +1,6 @@
 # 🏠 House Price Prediction – Flask Web Application
 
-📌 Project Overview
+- 📌 Project Overview
 
 This project is a web-based House Price Prediction Application built using Flask and Machine Learning.
 
