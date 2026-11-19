@@ -1,0 +1,5 @@
+Flask  # used to create web appliction.
+numpy  # used for numerical caculations and arrays.
+pandas # udes for data manipulation and analysis.
+scikit-learn  # used to build and train ML models.
+joblib  # used to save and load trained ML models.
